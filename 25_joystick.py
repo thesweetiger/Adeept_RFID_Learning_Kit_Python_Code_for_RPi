@@ -24,7 +24,7 @@ def getResult():	#get joystick result
 	if ADC0832.getResult() == 255:
 		return 4		#right
 
-	if GPIO.input(btn) == 1:
+	if GPIO.input(btn) == 0:
 		print 'Button is pressed!'		# Button pressed
 
 def loop():
